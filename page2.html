@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0; padding: 0; font-family: '';}
+@media(max-width:5000px){
+body{width: 100%; background-color: rgb(255, 255, 255); height: 100vh;}
+section{height: 100vh;}
+
+}
+<style>
+    *{margin: 0; padding: 0; font-family: '';}
+@media(max-width:5000px){
+body{width: 100%; background-color: rgb(255, 255, 255); height: 100vh;}
+section{height: 100vh;}
+.yslogo {width: 100px; z-index: 1; position: fixed; cursor: pointer; right: 2vw; top: 2vw;}
+#navbar { width: 120px; height: 100vh; position: fixed; left: -250px; top: 0; background-color: #ffffff; box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+ transition: left 2s; z-index: 0; display: flex; flex-direction: column; line-height: 3vw; padding-left: 2vw; padding-top: 3vw;}
+#hover-target { position: fixed;bottom: 20px; left: 20px; width: 50px; height: 50px; border-radius: 50%; background-color: #3490dc; cursor: pointer; z-index: 1;}
+#hover-target:hover + #navbar { left: 0vw;}
+
+#sec1{display: flex;}
+.right{width: 50%; overflow: hidden;}
+.slice1{width: 120%; margin-left: -5vw; margin-top: -25vw;}
+.top{font-size: 38px; font-weight: bolder; width: 500px; height: 50vh;}
+SPAN{font-size: 50PX;}
+.left{ display: flex; flex-direction: column; align-items: center; justify-content: center; width: 50%; padding-top: 10vw;}
+.point{width: 100%; height: 100vh; overflow: hidden;}
+.slice2{width: 100%; margin-top: -43vw;}
+.top2{font-size: 48px; font-weight: bolder; height: 60vh; margin-left: 10vw; margin-top: 8vw;}
+.top2 span{font-size: 58px;}
+.point2{ width: 100%; overflow: hidden; height: 80%;}
+.slice4{width: 100%; margin-top: -15vw;}
+.slice5{margin-top: -10vw; width: 120%; margin-left: -5vw; }
+.pt{font-size: 140px; font-weight: bolder; width: 1000px; margin-top: -30vw; margin-left: 100px; color: #ffffff;}
+.con{width: 25%; overflow: hidden;}
+.flex{display: flex; height: 80vh;}
+.midtext{color: #000000; font-size: 50px; width: 80%; font-weight: bolder;}
+.pt2{font-size: 140px; font-weight: bolder;margin-left: 250px; color: #000000; }
+#sec5{height: 50vw; background-color: #ffc400; padding-top: 10vw; margin-top: 10vw;}
+#sec5 a{text-decoration: none;}#sec5 .pt2:hover{color: #ffffff;} #sec5 .pt2:active{color: #ffffff;}
+}
+</style>
+<body>
+    <section id="sec1">
+
+        <a href="index.html"><img src="logo.svg" class="yslogo"></div></a>
+        <div id="hover-target"></div>
+            <nav id="navbar" class="flex flex-col">
+            <!-- Add navbar content here -->
+            <a href="page1.html" class="p-4 hover:bg-blue-100">Home</a>
+            <a href="page2.html" class="p-4 hover:bg-blue-100">About</a>
+            <a href="page3.html" class="p-4 hover:bg-blue-100">Services</a>
+            <a href="page4.html" class="p-4 hover:bg-blue-100">Contact</a>
+            </nav>
+        
+        <div class="right"><img src="maan.jpg" class="slice1"></div>
+        <div class="left">
+            <div class="top"><SPAN>mango butter jam</SPAN><BR><BR> 수제 망고 저당잼과 뉴질랜드 천연 버터의 만남.</div>
+        </div>
+    </section>
+    <section id="sec2">
+        <div class="point"><img src="spread.jpg" class="slice2"></div>
+        <div class="point-text">
+            <div class="pt">spread it</div>
+        </div>
+    </section>
+    <section id="sec4">
+        <div class="top2"><sPAN>100% MANGO, <br>NO MANGO JUICE</sPAN><BR>재료를 아낌없이 담아,<BR>과육이 가득 씹히는 버터스프레드</div>
+        <div class="point2"><img src="pour.jpg" class="slice4" ></div>
+    </section>
+   
+    <section id="sec5">
+        <a href="https://smartstore.naver.com/yshealthyda/products/5932724591"><div class="pt2">shop > </div></a>
+    </section>
+</body>
+</html>

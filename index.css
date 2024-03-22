@@ -1,0 +1,68 @@
+*{margin: 0; padding: 0; font-family: '';}
+@media(max-width:5000px){
+body{width: 100%; background-color: rgb(42, 42, 42); height: 100vh;}
+section{height: 100vh;}
+#navbar { width: 120px; height: 100vh; position: fixed; left: -250px; top: 0; background-color: #ffffff; box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: left 2s; z-index: 0; display: flex; flex-direction: column; line-height: 3vw; padding-left: 2vw; padding-top: 3vw;}
+ #hover-target { position: fixed;bottom: 20px; left: 20px; width: 50px; height: 50px; border-radius: 50%; background-color: #3490dc; cursor: pointer; z-index: 2;}
+ #hover-target:hover + #navbar { left: 0vw;}
+
+.flex{display: flex; @media(width<900px){flex-direction: column;}}
+
+.img-container{width: 100%; background-image: url(dkt.jpg);height: 100vh;background-size: cover; background-position: 50%; background-position-y: 80%;}
+.img-container2{width: 100%; background-image: url(jaam.jpg);height: 100vh;background-size: cover; background-position: 30%;background-position-y: 35%;}
+.img-container3{width: 100%; background-image: url(ys5.jpg);height: 100vh;background-size: cover; background-position: 30%;}
+.img-container4{width: 100%; background-image: url(ys2.png);height: 100vh;background-size: cover; background-position: 30%;}
+
+.smallimg{overflow: hidden;width: 40%; height:50vw; z-index: 1;position: fixed;}
+.smallimg1{width: 70%;margin-top: 0vw;animation: slidedown .8s ease-in-out forwards .8s;}
+@keyframes slidedown { 100% {transform: translateX(0px); opacity: 0;} 0% {transform: translateX(-300px);}}
+.show1{z-index:1; padding-top: 20vw; margin-left: 180px; color: #ffffff;--s: 0.1em; /* the thickness of the line */--c: #ffffff; /* the color */ font-weight: 700;font-size: 115px;
+  font-family: Hack, sans-serif;text-transform: uppercase; background:linear-gradient(90deg,var(--c) 50%,#ffffff 0)calc(100% - var(--_p,0%));letter-spacing: 0px;-webkit-background-clip: text; line-height: 120px;
+  background-clip: text; -webkit-text-fill-color: transparent;background-size: 200%;animation: shine 2s linear;animation-delay: 1s;animation-fill-mode: forwards;position: relative;}
+    @keyframes shine { 0% {background-position-x: 100%;}100% { background-position-x: 0%;}} 
+.show2{ z-index:1; padding-bottom: 5vw; margin-top: 1vw; margin-left: 180px; color: #ffffff;--s: 0.1em; /* the thickness of the line */--c: #ffffff;  /* the color */ font-weight: bolder;font-size: 50px;
+  font-family: Hack, sans-serif;text-transform: uppercase; background:linear-gradient(90deg,var(--c) 50%,#ffffff00 0)calc(100% - var(--_p,0%));letter-spacing: 0px;-webkit-background-clip: text; 
+  background-clip: text; -webkit-text-fill-color: transparent;background-size: 200%;animation: shine 2s linear;animation-delay: 2.5s;animation-fill-mode: forwards;position: relative;}
+    @keyframes shine { 0% {background-position-x: 100%;}100% { background-position-x: 0%;}} 
+.show3{z-index:1; padding-top: 20vw; margin-left: 180px; color: #ffffff;--s: 0.1em; /* the thickness of the line */--c: #000000; /* the color */ font-weight: 700;font-size: 115px;
+  font-family: Hack, sans-serif;text-transform: uppercase; background:linear-gradient(90deg,var(--c) 50%,#ffffff 0)calc(100% - var(--_p,0%));letter-spacing: 0px;-webkit-background-clip: text; line-height: 120px;
+  background-clip: text; -webkit-text-fill-color: transparent;background-size: 200%;animation: shine 2s linear;animation-delay: 1s;animation-fill-mode: forwards;position: relative;}
+    @keyframes shine { 0% {background-position-x: 100%;}100% { background-position-x: 0%;}} 
+    .show4{ z-index:1; padding-bottom: 5vw; margin-top: 1vw; margin-left: 180px; color: #ffffff;--s: 0.1em; /* the thickness of the line */--c: #000000;  /* the color */ font-weight: bolder;font-size: 50px;
+      font-family: Hack, sans-serif;text-transform: uppercase; background:linear-gradient(90deg,var(--c) 50%,#ffffff00 0)calc(100% - var(--_p,0%));letter-spacing: 0px;-webkit-background-clip: text; 
+      background-clip: text; -webkit-text-fill-color: transparent;background-size: 200%;animation: shine 2s linear;animation-delay: 2.5s;animation-fill-mode: forwards;position: relative;}
+        @keyframes shine { 0% {background-position-x: 100%;}100% { background-position-x: 0%;}} 
+.yslogo {width: 100px; z-index: 2; position: fixed; cursor: pointer; right: 2vw; top: 2vw;}
+
+
+#sec6{padding-bottom: 50vw;}
+#sec6 .text3{font-size: 45px;padding-left: 550px;padding: 10vw;}
+#sec6 .text2{font-size: 20px; line-height: 32px; white-space: normal; padding-left: 550px;padding-right: 10vw;}
+#sec6 .text4{ width: 80%; float: right; white-space: nowrap; overflow: hidden;
+ position: relative; word-break: keep-all; padding: 2rem 0;}
+#sec6 .gallery { scrollbar-width: none; padding: 1rem; display: flex;overflow: scroll;height: 65vh;scroll-snap-type: both mandatory;scroll-padding: 1rem; }
+#sec6 .active { scroll-behavior: smooth; scrollbar-width: thin;}
+#sec6 .card {background-color: #000; scroll-snap-align: center;display: inline-block;border-radius: 20px;font-size: 0; min-height: 430px;max-height: 430px; min-width: 270px; margin-left: 1vw;}
+
+#sec1{padding: 100px; color: #ffffff; background-color: #000;}
+#sec1 h1{font-size: 50px; line-height: 60px;}
+#sec1 .show1{padding-bottom: 50px;}
+#sec1 .show3{padding-bottom: 20px;}
+#sec1 h3{font-size: 30px;}
+#sec1 h6{font-size: 17px;}
+#sec1 .value-container{display: flex; gap: 0px;@media(width<900px){flex-direction: column;}}
+#sec1 .left-container{width: 50%; @media(width<900px){width: 100%; padding-bottom: 100px;}}
+
+.simple-bar-chart{--line-count: 10; --line-color: currentcolor; --line-opacity: 0.1; --item-gap: 15%; --item-default-color: #ffffff;
+ width: 200px;height: 10rem; display: grid; grid-auto-flow: column; gap: var(--item-gap); align-items: end; padding-inline: var(--item-gap); 
+ --padding-block: 1.5rem; /*space for labels*/ padding-block: var(--padding-block); position: relative; isolation: isolate;}
+.simple-bar-chart::after{ content: ""; position: absolute; inset: var(--padding-block) 0; z-index: -1; --line-width: 1px; --line-spacing: calc(100% / var(--line-count));
+ background-image: repeating-linear-gradient(to top, transparent 0 calc(var(--line-spacing) - var(--line-width)), var(--line-color) 0 var(--line-spacing));
+box-shadow: 0 var(--line-width) 0 var(--line-color); opacity: var(--line-opacity);}
+.simple-bar-chart > .item{ height: calc(1% * var(--val)); background-color: var(--clr, var(--item-default-color)); position: relative; animation: item-height 1s ease forwards}
+@keyframes item-height { from { height: 0 }}
+.simple-bar-chart > .item > * { position: absolute; text-align: center;}
+.simple-bar-chart > .item > .label { inset: 100% 0 auto 0 }
+.simple-bar-chart > .item > .value { inset: auto 0 100% 0 }
+.label{font-size:17px; border:0px solid; width: 100px; margin-left:-25px; padding-top:10px;}}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0; padding: 0; font-family: '';}
+@media(max-width:5000px){
+body{width: 100%; background-color: rgb(255, 255, 255); height: 100vh;}
+section{height: 100vh; background-color: #ffffff;}
+.yslogo {width: 100px; z-index: 1; position: fixed; cursor: pointer; right: 2vw; top: 2vw;}
+#navbar { width: 120px; height: 100vh; position: fixed; left: -250px; top: 0; background-color: #ffffff; box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+ transition: left 2s; z-index: 0; display: flex; flex-direction: column; line-height: 3vw; padding-left: 2vw; padding-top: 3vw;}
+#hover-target { position: fixed;bottom: 20px; left: 20px; width: 50px; height: 50px; border-radius: 50%; background-color: #3490dc; cursor: pointer; z-index: 1;}
+#hover-target:hover + #navbar { left: 0vw;}
+
+#sec1{display: flex; @media(width<1200px){flex-direction: column; height: 100vh;}}
+.slice1{width: 120%; margin-left: -6vw; margin-top: -4vw;}
+.top{font-size: 38px; font-weight: bolder; padding-left: 100px; height: 50vh;@media(width<1200px){padding-left: 100%; height: 40vh;}@media(width<500px){font-size: 25px;}}
+SPAN{font-size: 50PX;}
+.left{ display: flex; align-items: center; justify-content: center; width: 50%;padding-right: 100px;  padding-top: 10vw;}
+.img-container{width: 100%; background-image: url(hand.jpg);height: 100vh;background-size: cover; background-position: 30%;}
+.img-container2{width: 100%; background-image: url(ys4.jpg);height: 100vh;background-size: cover; background-position: 30%;}
+.img-container3{width: 100%; background-image: url(hihi.jpg);height: 100vh;background-size: cover; background-position: 30%;@media(width<1400px){width: 100%;}}
+.pt{font-size: 140px; font-weight: bolder; padding-top: 10vw; text-align: center; color: #ffffff; line-height: 100px;@media(width<1200px){font-size: 80px;}}
+.pt span{font-size: 20px; color: #ffffff; margin-left: 50vw;}
+#sec4{height: 500px; background-color: #ffffff; padding-left: 15vw; padding-top: 100px;}
+.midtext{color: #000000; font-size: 50px; font-weight: bolder;@media(width<500px){font-size: 40px;}}
+.con{width: 41%; height: 70%; overflow: hidden;}
+.flex{display: flex; height: 100vh; justify-content: space-between; padding-left: 5vw;padding-right: 5vw;@media(width<1400px){flex-direction: column;}}
+.column{display: flex;}
+.examples{font-size: 40px; font-weight: bolder; padding-bottom: 10vw; padding-left: 10vw; padding-top: 10vw;}
+#sec3{background-color: #74c0ff;}
+.pt2{text-align: center; width: 50%; font-size: 140px; font-weight: bolder; color: #3490dc; @media(width<1400px){font-size: 100px;}}
+.shoplist{width: 50%;}
+.shops{box-sizing: border-box;font-size: 80px; background-color: #38506400; text-align: center; line-height: 100px;@media(width<1700px){font-size: 60px;}}
+footer a{text-decoration: none; color: #3490dc;}footer a:hover{color: #000000;} footer a:active{color: #000000;}
+footer{background-color: #252525;padding-bottom: 10vw; display: flex; justify-content: space-between;@media(width<1400px){flex-direction: column;}}
+.foot{padding-left: 150px; line-height: 30px; font-size: 15px; padding-top: 5vw;font-weight: 600; color: #ffffff;}
+.foot span{font-size: 25px; font-weight: bolder;color: #ffffff;}
+#sec5 { container-type: inline-size; gap: var(--size-7); inline-size: 100%; background-color: rgb(172, 136, 136); color: var(--gray-10); padding-block: var(--size-7); padding-inline: var(--size-3);}
+  .carousel { display: grid; max-inline-size: 100%; gap: var(--size-3);}
+  header { display: grid; grid-auto-flow: column; justify-content: space-between;}
+  h3 { font-weight: var(--font-weight-7);}
+ .controls { direction: ltr; display: flex; grid-auto-flow: column; place-items: center; gap: 92vw; position: absolute; z-index: 1; 
+ @media (width < 768px) { display: none;}}
+  button {display: grid; place-items: center;  block-size: var(--size-8); border-radius: var(--radius-round); background-color: var(--gray-3); transition: background-color 0.2s ease;
+  &:hover { background-color: var(--gray-4);}
+  &:focus { box-shadow: 0 0 0 2px var(--indigo-7);}
+  &:focus-visible { box-shadow: unset; outline-offset: unset;}
+  &:disabled { opacity: 0.3; cursor: not-allowed;}}
+  .scroller { z-index: 0;display: grid; grid-auto-flow: column; gap: var(--size-3); scroll-behavior: smooth; overflow-x: auto; padding-block-end: var(--size-6); scrollbar-width: thin; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; }
+  .snap { scroll-snap-align: start; padding: 0; margin: 0; text-decoration: none; color: inherit;}
+  figure { display: grid; grid-template-rows: 1fr min-content;inline-size: min(100cqi, 500px); place-items: start;gap: var(--size-3);}
+  .pic {aspect-ratio: var(--ratio-square); object-fit: cover; background-color: rgb(255, 255, 255); block-size: 100%;}
+  figcaption{ border: 0px solid; height: 0vw; width: 32vw;border-radius: 10px;text-align: center;}
+    
+}
+</style>
+<body>
+    <section id="sec2">
+        <a href="index.html"><img src="logo.svg" class="yslogo"></div></a>
+        <div id="hover-target"></div>
+            <nav id="navbar" class="flex flex-col">
+            <!-- Add navbar content here -->
+            <a href="page1.html" class="p-4 hover:bg-blue-100">Home</a>
+            <a href="page2.html" class="p-4 hover:bg-blue-100">About</a>
+            <a href="page3.html" class="p-4 hover:bg-blue-100">Services</a>
+            <a href="page4.html" class="p-4 hover:bg-blue-100">Contact</a>
+            </nav>
+        <div class="img-container">
+            <div class="pt"><span>almond based bread<br>you can try five options</span><br>brownies</div>
+        </div>
+
+    </section>
+
+    <section id="sec2">
+      <div class="img-container2">
+          <div class="pt"><span>almond based bread<br>you can try five options</span><br>vegan cookies</div>
+      </div>
+  </section>
+    <section id="sec2">
+        <div class="img-container3">
+            <div class="pt"><span>almond based bread<br>you can try five options</span><br>pound cake</div>
+        </div>
+    </section>
+    <section id="sec1">
+      <div class="img-container4"></div>
+      <div class="left">
+          <div class="top"><SPAN>SANDWICH & ALMOND</SPAN><BR><BR>아몬드가루 베이스의 저당, 저탄수화물, 고단백질 식빵입니다. 빵의 두께만큼 아몬드로 가득 채웠습니다.</div>
+      </div>
+  </section>
+    <section id="sec4">
+        <div class="midtext">포만감 up, 당 down.<br> 비건부터 곤약까지. <Br>글루텐 0%<br>대체당 0%<br>유제품 0%</div>
+    </section>
+
+    <section id="sec5">
+       
+        <div class="carousel" aria-label="Featured Items Carousel" aria-roledescription="carousel" >
+            <div class="controls">
+                <button id="prevBtn" aria-label="Previous" title="Previous" onclick="Scroller.scrollBy(-516, 0)" style="background-color: rgba(255, 255, 255, 0); border: 0; margin-top: 240px; margin-left: 2vw;" >
+                    <svg style="width: 20px;" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M8.71833 15L0 7.5L8.71833 0L10 1.10257L2.56337 7.5L10 13.8974L8.71833 15Z" fill="white" /></svg></button>
+                <button id="nextBtn" aria-label="Next" title="Next" onclick="Scroller.scrollBy(516, 0)" style="background-color: rgba(255, 255, 255, 0); border: 0; margin-top: 240px; " >
+                    <svg style="width: 20px;" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" >
+                      <path d="M1.28167 15L10 7.5L1.28167 0L1.72702e-07 1.10257L7.43663 7.5L1.72702e-07 13.8974L1.28167 15Z" fill="white"/> </svg></button>
+                </div>
+          <div id="Scroller" class="scroller" role="group" aria-label="Items Scroller" aria-live="polite">
+           
+            <a href="" class="snap" aria-label="1 of 6" aria-roledescription="item">
+              <figure>
+                <picture>                    
+                  <img
+                  src="review1.jpg" class="pic"
+                  alt=""
+                  loading="lazy"
+                  width="500"
+                  height="500"
+                />
+                  
+                </picture>
+                <figcaption>
+                  <div></div>
+                </figcaption>
+              </figure>
+            </a>
+            <a href="" class="snap" aria-label="2 of 6" aria-roledescription="item" >
+              <figure>
+                <picture>                    
+                  <img
+                    src="review.jpg"class="pic"
+                    alt=""
+                    loading="lazy"
+                    width="500"
+                    height="500"
+                  />
+                  
+                </picture>
+                <figcaption>
+                  <div></div>
+                </figcaption>
+              </figure>
+            </a>
+            <a href="" class="snap" aria-label="3 of 6" aria-roledescription="item">
+              <figure>
+                <picture>
+                  <img
+                    src="ys6.jpg"class="pic"
+                    alt=""
+                    loading="lazy"
+                    width="500"
+                    height="500"
+                  />
+                </picture>
+                <figcaption>
+                  <div></div>
+                </figcaption>
+              </figure>
+            </a>
+            <a href="" class="snap" aria-label="4 of 6" aria-roledescription="item"
+            >
+              <figure>
+                <picture>
+                  <img
+                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/logical-carousel/images/img-4.webp"class="pic"
+                    alt=""
+                    loading="lazy"
+                    width="500"
+                    height="500"
+                  />
+                </picture>
+                <figcaption>
+                  <div>Breakthrough Comfort</div>
+                </figcaption>
+              </figure>
+            </a>
+            <a href="" class="snap" aria-label="5 of 6" aria-roledescription="item"
+            >
+              <figure>
+                <picture>
+                  <img
+                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/logical-carousel/images/img-5.webp"class="pic"
+                    alt=""
+                    loading="lazy"
+                    width="500"
+                    height="500"
+                  />
+                </picture>
+                <figcaption>
+                  <div>Style in Motion</div>
+                </figcaption>
+              </figure>
+            </a>
+            <a href="" class="snap" aria-label="6 of 6" aria-roledescription="item" >
+              <figure>
+                <picture>
+                  <img
+                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/logical-carousel/images/img-6.webp"class="pic"
+                    alt=""
+                    loading="lazy"
+                    width="500"
+                    height="500"
+                  />
+                </picture>
+                <figcaption>
+                  <div>Precision in Every Stitch</div>
+                </figcaption>
+              </figure>
+            </a>
+           
+          </div>
+          
+        </div>
+      </section>
+
+    <footer>
+        <div class="pt2">shop ></div>
+        <div class="shoplist">
+        <div class="shops"><a href="https://smartstore.naver.com/yshealthyda/products/5932724591">naver</a></div>
+        <div class="shops"><a href="https://smartstore.naver.com/yshealthyda/products/5932724591">coupang</a></div>
+        <div class="shops"><a href="https://smartstore.naver.com/yshealthyda/products/5932724591">idius</a></div>
+        </div>
+    </footer>
+    <footer>
+        <div class="foot">
+            <span>CONTACT</span>
+        <br><br><br> 010-3453-9773<br>대표자 : 정유경<br>사업자등록번호 : 878-90-00506<br><br><br>INSTAGRAM
+        </div>
+    </footer>
+    
+</body>
+</html>
