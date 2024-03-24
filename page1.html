@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <style>
     *{margin: 0; padding: 0; font-family: '';}
@@ -16,16 +19,19 @@ section{height: 100vh; background-color: #ffffff;}
 #hover-target { position: fixed;bottom: 20px; left: 20px; width: 50px; height: 50px; border-radius: 50%; background-color: #3490dc; cursor: pointer; z-index: 1;}
 #hover-target:hover + #navbar { left: 0vw;}
 
-#sec1{display: flex; @media(width<1200px){flex-direction: column; height: 100vh;}}
+#sec1{display: flex; @media(width<1000px){flex-direction: column; height: 100vh;}}
 .slice1{width: 120%; margin-left: -6vw; margin-top: -4vw;}
-.top{font-size: 38px; font-weight: bolder; padding-left: 100px; height: 50vh;@media(width<1200px){padding-left: 100%; height: 40vh;}@media(width<500px){font-size: 25px;}}
-SPAN{font-size: 50PX;}
-.left{ display: flex; align-items: center; justify-content: center; width: 50%;padding-right: 100px;  padding-top: 10vw;}
+.top{font-size: 38px; font-weight: bolder; padding-left: 100px; height: 50vh;@media(width<1000px){font-size: 29px;}}
+SPAN{font-size: 50PX;@media(width<1000px){font-size: 55px;}}
+.left{ display: flex; align-items: center; justify-content: center; width: 50%;padding-right: 100px;  padding-top: 10vw;@media(width<700px){width: 1;}}
 .img-container{width: 100%; background-image: url(sn.jpg);height: 100vh;background-size: cover; background-position: 30%;}
+.img-container1{width: 100%; background-image: url(AESVDE.jpg);height: 100vh;background-size: cover; background-position: 30%;}
 .img-container2{width: 100%; background-image: url(dsew.jpg);height: 100vh;background-size: cover; background-position: 30%;}
 .img-container3{width: 50%; background-image: url(ys2.png);height: 100vh;background-size: cover; background-position: 30%;@media(width<1400px){width: 100%;}}
-.pt{font-size: 140px; font-weight: bolder; padding-top: 10vw; text-align: center; color: #ffffff; line-height: 100px;@media(width<1200px){font-size: 80px;}}
+.img-container4{width: 100%; background-image: url(.jpg);height: 100vh;background-size: cover; background-position: 30%;}
+.pt{font-family: prompt; font-size: 140px; font-weight: bolder; padding-top: 10vw; text-align: center; color: #ffffff; line-height: 1;@media(width<1200px){font-size: 70px; padding-top: 80vw;}}
 .pt span{font-size: 20px; color: #ffffff; margin-left: 50vw;}
+.pt a{font-family: prompt; text-decoration: none; color: rgb(49, 179, 255);}
 #sec4{height: 500px; background-color: #ffffff; padding-left: 15vw; padding-top: 100px;}
 .midtext{color: #000000; font-size: 50px; font-weight: bolder;@media(width<500px){font-size: 40px;}}
 .con{width: 41%; height: 70%; overflow: hidden;}
@@ -35,13 +41,13 @@ SPAN{font-size: 50PX;}
 #sec3{background-color: #74c0ff;}
 .pt2{text-align: center; width: 50%; font-size: 140px; font-weight: bolder; color: #3490dc; @media(width<1400px){font-size: 100px;}}
 .shoplist{width: 50%;}
-.shops{box-sizing: border-box;font-size: 80px; background-color: #38506400; text-align: center; line-height: 100px;@media(width<1700px){font-size: 60px;}}
-footer a{text-decoration: none; color: #3490dc;}footer a:hover{color: #000000;} footer a:active{color: #000000;}
-footer{background-color: #935a5a;padding-bottom: 10vw; display: flex; justify-content: space-between;@media(width<1400px){flex-direction: column;}}
+.shops{box-sizing: border-box;font-size: 80px; background-color: #ffffff00; text-align: center; line-height: 100px;@media(width<1700px){font-size: 60px;}}
+footer a{text-decoration: none; color: #000000;}footer a:hover{color: #000000;} footer a:active{color: #000000;}
+footer{background-color: #ffffff;padding-bottom: 10vw; display: flex; justify-content: space-between;@media(width<1400px){flex-direction: column;}}
 .foot{padding-left: 150px; line-height: 20px; font-size: 15px;font-weight: bolder; padding-top: 5vw;}
 .foot span{font-size: 30px;}
-#sec5 { container-type: inline-size; gap: var(--size-7); inline-size: 100%; background-color: rgb(172, 136, 136); color: var(--gray-10); padding-block: var(--size-7); padding-inline: var(--size-3);}
-  .carousel { display: grid; max-inline-size: 100%; gap: var(--size-3);}
+#sec5 {margin-top: 0vw; container-type: inline-size; gap: var(--size-7); inline-size: 100%; background-color: rgb(255, 255, 255); color: var(--gray-10); padding-block: var(--size-7); padding-inline: var(--size-3);}
+  .carousel {padding-top: 0vw; display: grid; max-inline-size: 100%; gap: var(--size-3);}
   header { display: grid; grid-auto-flow: column; justify-content: space-between;}
   h3 { font-weight: var(--font-weight-7);}
  .controls { direction: ltr; display: flex; grid-auto-flow: column; place-items: center; gap: 92vw; position: absolute; z-index: 1; 
@@ -56,7 +62,6 @@ footer{background-color: #935a5a;padding-bottom: 10vw; display: flex; justify-co
   figure { display: grid; grid-template-rows: 1fr min-content;inline-size: min(100cqi, 500px); place-items: start;gap: var(--size-3);}
   .pic {aspect-ratio: var(--ratio-square); object-fit: cover; background-color: rgb(255, 255, 255); block-size: 100%;}
   figcaption{ border: 0px solid; height: 0vw; width: 32vw;border-radius: 10px;text-align: center;}
-    
 }
 </style>
 <body>
@@ -74,6 +79,11 @@ footer{background-color: #935a5a;padding-bottom: 10vw; display: flex; justify-co
             <div class="pt"><span>almond based bread<br>you can try five options</span><br>This is Almond</div>
         </div>
     </section>
+    
+    <section id="sec2">
+        <div class="img-container1">
+            <div class="pt"><span>almond based bread<br>you can try five options</span><br>spread it</div>
+        </div>
     <section id="sec1">
         <div class="img-container3"></div>
         <div class="left">
@@ -83,13 +93,12 @@ footer{background-color: #935a5a;padding-bottom: 10vw; display: flex; justify-co
 
     <section id="sec2">
         <div class="img-container2">
-            <div class="pt"><span>almond based bread<br>you can try five options</span><br></div>
+            <div class="pt"><span>almond based bread<br>you can try five options</span><br>open sandwich</div>
         </div>
     </section>
     <section id="sec4">
         <div class="midtext">포만감 up, 당 down.<br> 비건부터 곤약까지. <Br>글루텐 0%<br>대체당 0%<br>유제품 0%</div>
     </section>
-
     <section id="sec5">
        
         <div class="carousel" aria-label="Featured Items Carousel" aria-roledescription="carousel" >
@@ -107,7 +116,7 @@ footer{background-color: #935a5a;padding-bottom: 10vw; display: flex; justify-co
               <figure>
                 <picture>                    
                   <img
-                  src="review1.jpg" class="pic"
+                  src="review2.png" class="pic"
                   alt=""
                   loading="lazy"
                   width="500"
@@ -124,7 +133,7 @@ footer{background-color: #935a5a;padding-bottom: 10vw; display: flex; justify-co
               <figure>
                 <picture>                    
                   <img
-                    src="review.jpg"class="pic"
+                    src="review1.jpg"class="pic"
                     alt=""
                     loading="lazy"
                     width="500"
@@ -141,7 +150,7 @@ footer{background-color: #935a5a;padding-bottom: 10vw; display: flex; justify-co
               <figure>
                 <picture>
                   <img
-                    src="ys6.jpg"class="pic"
+                    src="d.jpg"class="pic"
                     alt=""
                     loading="lazy"
                     width="500"
@@ -158,7 +167,7 @@ footer{background-color: #935a5a;padding-bottom: 10vw; display: flex; justify-co
               <figure>
                 <picture>
                   <img
-                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/logical-carousel/images/img-4.webp"class="pic"
+                    src="review.jpg"class="pic"
                     alt=""
                     loading="lazy"
                     width="500"
@@ -175,7 +184,7 @@ footer{background-color: #935a5a;padding-bottom: 10vw; display: flex; justify-co
               <figure>
                 <picture>
                   <img
-                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/logical-carousel/images/img-5.webp"class="pic"
+                    src="ys6.jpg"class="pic"
                     alt=""
                     loading="lazy"
                     width="500"
@@ -191,7 +200,7 @@ footer{background-color: #935a5a;padding-bottom: 10vw; display: flex; justify-co
               <figure>
                 <picture>
                   <img
-                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/logical-carousel/images/img-6.webp"class="pic"
+                    src="te.jpg"class="pic"
                     alt=""
                     loading="lazy"
                     width="500"
@@ -209,20 +218,19 @@ footer{background-color: #935a5a;padding-bottom: 10vw; display: flex; justify-co
         </div>
       </section>
 
+      
+    <section id="sec2">
+      <div class="img-container4">
+          <div class="pt"><a href="https://smartstore.naver.com/yshealthyda/products/5932724591"> shop ></a></div>
+      </div>
+  </section>
+
     <footer>
-        <div class="pt2">shop ></div>
-        <div class="shoplist">
-        <div class="shops"><a href="https://smartstore.naver.com/yshealthyda/products/5932724591">naver</a></div>
-        <div class="shops"><a href="https://smartstore.naver.com/yshealthyda/products/5932724591">coupang</a></div>
-        <div class="shops"><a href="https://smartstore.naver.com/yshealthyda/products/5932724591">idius</a></div>
-        </div>
-    </footer>
-    <footer>
-        <div class="foot">
-            <span>와이즈헬씨다</span>
-        <br><br><br>contact 010-3453-9773<br>사업자번호 878-90-00506
-        </div>
-    </footer>
+      <div class="foot">
+          <span>CONTACT</span>
+      <br><br><br> 010-3453-9773<br>대표자 : 정유경<br>사업자등록번호 : 878-90-00506<br><br><br><a href="https://www.instagram.com/yshealthyda/"> INSTAGRAM</a>
+      </div>
+  </footer>
     
 </body>
 </html>
