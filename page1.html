@@ -26,9 +26,9 @@
 .menu-btn{
   position:fixed;
   z-index: 2;
-  left: 20px;
+  left: 10px;
   /*left: 20px; */
-  top: 20px;
+  top: 25px;
   height: 50px;
   width: 100px;
   text-align: center;
@@ -80,7 +80,7 @@
 .wrapper ul{
   position: absolute;
   top: 60%;
-  left: 50%;
+  left: 40%;
   height: 90%;
   transform: translate(-50%, -50%);
   list-style: none;
@@ -145,14 +145,14 @@ input[type="checkbox"]{
 @media(max-width:5000px){
 body{width: 100%; background-color: rgb(255, 255, 255); height: 100vh;}
 section{height: 100vh; background-color: #ffffff;}
-.yslogo {width: 100px; z-index: 1; position: fixed; cursor: pointer; right: 2vw; top: 2vw;}
+.yslogo {width: 85px; z-index: 1; position: fixed; cursor: pointer; right: 25px; top: 25px;}
 
 #sec1{display: flex; @media(width<1000px){flex-direction: column; height: 100vh;}}
 .slice1{width: 120%; margin-left: -6vw; margin-top: -4vw;}
-.top{font-size: 38px; font-weight: bolder; padding-left: 100px; height: 50vh;@media(width<1000px){font-size: 29px;}}
-SPAN{font-size: 50PX;@media(width<1000px){font-size: 55px;}}
+.top{font-size: 38px; font-weight: bolder; padding-left: 100px; height: 50vh;@media(width<1000px){font-size: 20px;}}
+SPAN{font-size: 50PX; line-height: 1; @media(width<1000px){font-size: 40px;}}
 .left{ display: flex; align-items: center; justify-content: center; width: 50%;padding-right: 100px;  padding-top: 10vw;@media(width<700px){width: 1;}}
-.img-container{width: 100%; background-image: url(sn.jpg);height: 100vh;background-size: cover; background-position: 30%;}
+.img-container{width: 100%; background-image: url(sn.jpg);height: 100vh;background-size: cover; background-position: 45%;}
 .img-container1{width: 100%; background-image: url(AESVDE.jpg);height: 100vh;background-size: cover; background-position: 30%;}
 .img-container2{width: 100%; background-image: url(dsew.jpg);height: 100vh;background-size: cover; background-position: 30%;}
 .img-container3{width: 50%; background-image: url(ys2.png);height: 100vh;background-size: cover; background-position: 30%;@media(width<1400px){width: 100%;}}
@@ -160,26 +160,26 @@ SPAN{font-size: 50PX;@media(width<1000px){font-size: 55px;}}
 .pt{font-family: prompt; font-size: 140px; font-weight: bolder; padding-top: 10vw; text-align: center; color: #ffffff; line-height: 1;@media(width<1200px){font-size: 70px; padding-top: 80vw;}}
 .pt span{font-size: 20px; color: #ffffff; margin-left: 50vw;}
 .pt a{font-family: prompt; text-decoration: none; color: rgb(49, 179, 255);}
-#sec4{height: 500px; background-color: #ffffff; padding-left: 15vw; padding-top: 100px;}
-.midtext{color: #000000; font-size: 50px; font-weight: bolder;@media(width<500px){font-size: 40px;}}
+#sec4{height: 300px; background-color: #ffffff; padding-left: 15vw; padding-top: 100px;padding-bottom: 100px;}
+.midtext{color: #000000; font-size: 50px; font-weight: bolder;@media(width<500px){font-size: 25px;}}
 .con{width: 41%; height: 70%; overflow: hidden;}
 .flex{display: flex; height: 100vh; justify-content: space-between; padding-left: 5vw;padding-right: 5vw;@media(width<1400px){flex-direction: column;}}
 .column{display: flex;}
 .examples{font-size: 40px; font-weight: bolder; padding-bottom: 10vw; padding-left: 10vw; padding-top: 10vw;}
-#sec3{background-color: #74c0ff;}
+#sec3{background-color: #ffffff;height: 60vh;padding-bottom: 250px;}
+#sec3 .pt{margin-top: -170px;}
 .pt2{text-align: center; width: 50%; font-size: 140px; font-weight: bolder; color: #3490dc; @media(width<1400px){font-size: 100px;}}
 .shoplist{width: 50%;}
 .shops{box-sizing: border-box;font-size: 80px; background-color: #ffffff00; text-align: center; line-height: 100px;@media(width<1700px){font-size: 60px;}}
 footer a{text-decoration: none; color: #000000;}footer a:hover{color: #000000;} footer a:active{color: #000000;}
 footer{background-color: #ffffff;padding-bottom: 10vw; display: flex; justify-content: space-between;@media(width<1400px){flex-direction: column;}}
-.foot{padding-left: 150px; line-height: 20px; font-size: 15px;font-weight: bolder; padding-top: 5vw;}
+.foot{padding-left: 15vw; line-height: 20px; font-size: 15px;font-weight: bolder; padding-top: 5vw;}
 .foot span{font-size: 30px;}
-#sec5 {margin-top: 0vw; container-type: inline-size; gap: var(--size-7); inline-size: 100%; background-color: rgb(255, 255, 255); color: var(--gray-10); padding-block: var(--size-7); padding-inline: var(--size-3);}
+#sec5 {margin-top: 0px; container-type: inline-size; gap: var(--size-7); inline-size: 100%; background-color: rgb(255, 255, 255); color: var(--gray-10); padding-block: var(--size-7); padding-inline: var(--size-3);}
   .carousel {padding-top: 0vw; display: grid; max-inline-size: 100%; gap: var(--size-3);}
   header { display: grid; grid-auto-flow: column; justify-content: space-between;}
   h3 { font-weight: var(--font-weight-7);}
- .controls { direction: ltr; display: flex; grid-auto-flow: column; place-items: center; gap: 92vw; position: absolute; z-index: 1; 
- @media (width < 768px) { display: none;}}
+ .controls { direction: ltr; display: flex; grid-auto-flow: column; place-items: center; gap: 85vw; position: absolute; z-index: 1; }
   button {display: grid; place-items: center;  block-size: var(--size-8); border-radius: var(--radius-round); background-color: var(--gray-3); transition: background-color 0.2s ease;
   &:hover { background-color: var(--gray-4);}
   &:focus { box-shadow: 0 0 0 2px var(--indigo-7);}
@@ -189,7 +189,7 @@ footer{background-color: #ffffff;padding-bottom: 10vw; display: flex; justify-co
   .snap { scroll-snap-align: start; padding: 0; margin: 0; text-decoration: none; color: inherit;}
   figure { display: grid; grid-template-rows: 1fr min-content;inline-size: min(100cqi, 500px); place-items: start;gap: var(--size-3);}
   .pic {aspect-ratio: var(--ratio-square); object-fit: cover; background-color: rgb(255, 255, 255); block-size: 100%;}
-  figcaption{ border: 0px solid; height: 0vw; width: 32vw;border-radius: 10px;text-align: center;}
+  figcaption{ margin-top: -105vw; margin-left: 10vw; color: #ffffff; font-size: 50px; font-weight: bolder;}
 }
 </style>
 <body>
@@ -206,26 +206,26 @@ footer{background-color: #ffffff;padding-bottom: 10vw; display: flex; justify-co
     </ul>
     </div>
         <a href="index.html"><img src="logo.svg" class="yslogo"></div></a>
-       
-        <div class="img-container">
-            <div class="pt"><span>almond based bread<br>you can try five options</span><br>This is Almond</div>
-        </div>
-    </section>
-    
-    <section id="sec2">
         <div class="img-container1">
-            <div class="pt"><span>almond based bread<br>you can try five options</span><br>spread it</div>
+            <div class="pt"><span>almond based <br>you can try five options</span><br>spread it</div>
         </div>
+
+    </section>
     <section id="sec1">
         <div class="img-container3"></div>
         <div class="left">
             <div class="top"><SPAN>SANDWICH & ALMOND</SPAN><BR><BR>아몬드가루 베이스의 저당, 저탄수화물, 고단백질 식빵입니다. 빵의 두께만큼 아몬드로 가득 채웠습니다.</div>
         </div>
     </section>
+    <section id="sec2">
+        <div class="img-container">
+            <div class="pt"><span>try everything<br></span>fresh sandwich</div>
+        </div>
+   
 
     <section id="sec2">
         <div class="img-container2">
-            <div class="pt"><span>almond based bread<br>you can try five options</span><br>open sandwich</div>
+            <div class="pt"><span>toast <br></span>open sandwich</div>
         </div>
     </section>
     <section id="sec4">
@@ -257,7 +257,7 @@ footer{background-color: #ffffff;padding-bottom: 10vw; display: flex; justify-co
                   
                 </picture>
                 <figcaption>
-                  <div></div>
+                  <div>butter<Br>& sallery</div>
                 </figcaption>
               </figure>
             </a>
@@ -274,45 +274,11 @@ footer{background-color: #ffffff;padding-bottom: 10vw; display: flex; justify-co
                   
                 </picture>
                 <figcaption>
-                  <div></div>
+                  <div>yogurt<Br>& nuts</div>
                 </figcaption>
               </figure>
             </a>
             <a href="" class="snap" aria-label="3 of 6" aria-roledescription="item">
-              <figure>
-                <picture>
-                  <img
-                    src="d.jpg"class="pic"
-                    alt=""
-                    loading="lazy"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-                <figcaption>
-                  <div></div>
-                </figcaption>
-              </figure>
-            </a>
-            <a href="" class="snap" aria-label="4 of 6" aria-roledescription="item"
-            >
-              <figure>
-                <picture>
-                  <img
-                    src="review.jpg"class="pic"
-                    alt=""
-                    loading="lazy"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-                <figcaption>
-                  <div>Breakthrough Comfort</div>
-                </figcaption>
-              </figure>
-            </a>
-            <a href="" class="snap" aria-label="5 of 6" aria-roledescription="item"
-            >
               <figure>
                 <picture>
                   <img
@@ -324,7 +290,41 @@ footer{background-color: #ffffff;padding-bottom: 10vw; display: flex; justify-co
                   />
                 </picture>
                 <figcaption>
-                  <div>Style in Motion</div>
+                  <div>cake</div>
+                </figcaption>
+              </figure>
+            </a>
+            <a href="" class="snap" aria-label="4 of 6" aria-roledescription="item"
+            >
+              <figure>
+                <picture>
+                  <img
+                    src="te.jpg"class="pic"
+                    alt=""
+                    loading="lazy"
+                    width="500"
+                    height="500"
+                  />
+                </picture>
+                <figcaption>
+                  <div>coleslaw</div>
+                </figcaption> 
+              </figure>
+            </a>
+            <a href="" class="snap" aria-label="5 of 6" aria-roledescription="item"
+            >
+              <figure>
+                <picture>
+                  <img
+                    src="d.jpg"class="pic"
+                    alt=""
+                    loading="lazy"
+                    width="500"
+                    height="500"
+                  />
+                </picture>
+                <figcaption>
+                  <div>delivery</div>
                 </figcaption>
               </figure>
             </a>
@@ -351,18 +351,19 @@ footer{background-color: #ffffff;padding-bottom: 10vw; display: flex; justify-co
       </section>
 
       
-    <section id="sec2">
+    <section id="sec3">
       <div class="img-container4">
-          <div class="pt"><a href="https://smartstore.naver.com/yshealthyda/products/5932724591"> shop ></a></div>
+          <div class="pt"><a href="https://smartstore.naver.com/yshealthyda/products/5932724591" > shop ></a></div>
       </div>
   </section>
 
-    <footer>
-      <div class="foot">
-          <span>CONTACT</span>
-      <br><br><br> 010-3453-9773<br>대표자 : 정유경<br>사업자등록번호 : 878-90-00506<br><br><br><a href="https://www.instagram.com/yshealthyda/"> INSTAGRAM</a>
-      </div>
-  </footer>
+  <footer>
+    <div class="foot">
+        <span>CONTACT</span>
+    <br><br><br> 010-3453-9773<br>대표자 : 정유경<br>사업자등록번호 : 878-90-00506<br><br><br>
+    <a href="https://www.instagram.com/yshealthyda/"> INSTAGRAM</a><br><a href="https://smartstore.naver.com/yshealthyda" style="color: #000000;">  NAVER ></a><br><a href="https://shop.coupang.com/vidv1/A00221889?source=brandstore_sdp_atf&platform=p&locale=ko_KR" style="color: #000000;"> COUPANG ></a><br><a href="https://www.idus.com/v2/search?utm_source=naver_sa&utm_medium=pc&utm_campaign=A.02_%EC%9E%91%EA%B0%80%EB%AA%85_PC&utm_content=%EC%8B%9D%ED%92%882_PC&utm_term=%EC%99%80%EC%9D%B4%EC%A6%88%ED%97%AC%EC%94%A8%EB%8B%A4&n_media=27758&n_query=%EC%99%80%EC%9D%B4%EC%A6%88%ED%97%AC%EC%94%A8%EB%8B%A4&n_rank=2&n_ad_group=grp-a001-01-000000028971567&n_ad=nad-a001-01-000000205070910&n_keyword_id=nkw-a001-01-000004765353491&n_keyword=%EC%99%80%EC%9D%B4%EC%A6%88%ED%97%AC%EC%94%A8%EB%8B%A4&n_campaign_type=1&n_ad_group_type=1&n_match=1&NaPm=ct=lu6ts6nc|ci=0yi0002nju5A4xpw9eW3|tr=sa|hk=301992188cce11390aa799c459fe3dfd45af643f&keyword=%EC%99%80%EC%9D%B4%EC%A6%88%ED%97%AC%EC%94%A8%EB%8B%A4"style="color: #000;"> IDIUS ></a>
+    </div>
+</footer>
     
 </body>
 </html>
