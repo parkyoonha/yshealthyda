@@ -150,14 +150,14 @@ input[type="checkbox"]{
 
 body{width: 100%; background-color: rgb(255, 255, 255); height: 100vh;}
 section{height: 100vh; background-color: #ffffff;}
-.yslogo {width: 85px; z-index: 1; position: fixed; cursor: pointer; right: 25px; top: 25px;}
+.yslogo {width: 85px; z-index: 1; position: fixed; cursor: pointer; right: 25px; top: 25px;@media(width<700px){width: 65px;}}
 
 
-.show1{font-family: prompt; font-size: 55px; padding-top: 100px; padding-bottom: 3vw; line-height: 1;@media(width<700px){font-size: 30px;}}
-.show2{font-size: 40px; padding-top: 4vw;}
-.show3{font-size: 35px;width: 70%; }
-.show5{font-size: 40px; padding-top: 3vw;}
-.show6{font-size: 35px; width: 70%; }
+.show1{font-family: prompt; font-size: 55px; padding-top: 100px; padding-bottom: 3vw; line-height: 1;@media(width<700px){font-size: 30px;}@media(width<330px){font-size: 20px;}}
+.show2{font-size: 40px; padding-top: 4vw;@media(width<330px){font-size: 30px;}}
+.show3{font-size: 35px;width: 70%;@media(width<330px){font-size: 20px;} }
+.show5{font-size: 40px; padding-top: 3vw;@media(width<330px){font-size: 30px;}}
+.show6{font-size: 35px; width: 70%;@media(width<330px){font-size: 20px;}}
 .three{display: flex; padding-top: 8vw; @media(width<1200px){flex-direction: column;}}
 .three h1{margin-right: 15vw; font-size: 28px;  @media(width<1200px){margin-top: 13vw;}}
 .left-container{padding-left: 5vw; }
@@ -170,7 +170,7 @@ SPAN{font-size: 50PX;}
 .img-container2{width: 100%; background-image: url(jaam.jpg);height: 100vh;background-size: cover; background-position: 30%;background-position-y: 30%;}
 .img-container3{width: 100%; background-image: url(ys5.jpg);height: 100vh;background-size: cover; background-position: 30%;}
 .pt{font-family: prompt; font-size: 9vw; font-weight: bolder; padding-left: 10vw; padding-top: 170px; color: #ffffff; line-height: 1; @media(width<700px){font-size: 15vw; }}
-.pt span{ font-size: 70px; color: #ffffff;@media(width<700px){font-size: 25px;}}
+.pt span{ font-size: 70px; color: #ffffff; @media(width<1200px){font-size: 40px;}@media(width<900px){font-size: 25px;}}
 .pt a{text-decoration: none;}
 #sec4{height: 500px; background-color: #ffffff; padding-left: 15vw; padding-top: 100px;}
 .midtext{color: #000000; font-size: 50px; font-weight: bolder;@media(width<500px){font-size: 40px;}}
@@ -284,6 +284,9 @@ ScrollReveal().reveal('.show6', {delay:1700});
  </script>  
 </body>
 </html>
+
+
+
 
 
 
