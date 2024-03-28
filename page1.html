@@ -153,21 +153,22 @@ section{height: 100vh; background-color: #ffffff;}
 SPAN{font-size: 50PX; line-height: 1; @media(width<1000px){font-size: 40px;}}
 .left{ display: flex; align-items: center; justify-content: center; width: 50%;padding-right: 100px;  padding-top: 10vw;@media(width<700px){width: 1;}}
 .img-container{width: 100%; background-image: url(sn.jpg);height: 100vh;background-size: cover; background-position: 45%;}
-.img-container1{width: 100%; background-image: url(AESVDE.jpg);height: 100vh;background-size: cover; background-position: 30%;}
+.img-container1-1{width: 100%; background-image: url(AESVDE.jpg);height: 50vh;background-size: cover; background-position: 30%;}
+.img-container1-2{width: 100%; background-image: url(te.jpg);height: 50vh;background-size: cover; background-position: 30%;}
 .img-container2{width: 100%; background-image: url(dsew.jpg);height: 100vh;background-size: cover; background-position: 30%;}
 .img-container3{width: 50%; background-image: url(ys2.png);height: 100vh;background-size: cover; background-position: 30%;@media(width<1400px){width: 100%;}}
 .img-container4{width: 100%; background-image: url(.jpg);height: 100vh;background-size: cover; background-position: 30%;}
-.pt{font-family: prompt; font-size: 140px; font-weight: bolder; padding-top: 10vw; text-align: center; color: #ffffff; line-height: 1;@media(width<1200px){font-size: 70px; padding-top: 80vw;}}
+.pt{font-family: prompt; font-size: 140px; font-weight: bolder; padding-top: 0vw; text-align: center; color: #ffffff; line-height: 1; @media(width<1200px){font-size: 70px; padding-top: 30vw;} @media(width<700px){font-size: 70px; padding-top: 50vw;}}
 .pt span{font-size: 20px; color: #ffffff; margin-left: 50vw;}
 .pt a{font-family: prompt; text-decoration: none; color: rgb(49, 179, 255);}
-#sec4{height: 300px; background-color: #ffffff; padding-left: 15vw; padding-top: 100px;padding-bottom: 100px;}
+#sec4{height: 50vh; @media(width<700px){height: 30vh} background-color: #ffffff; padding-left: 15vw; padding-top: 100px;padding-bottom: 100px;}
 .midtext{color: #000000; font-size: 50px; font-weight: bolder;@media(width<500px){font-size: 25px;}}
 .con{width: 41%; height: 70%; overflow: hidden;}
 .flex{display: flex; height: 100vh; justify-content: space-between; padding-left: 5vw;padding-right: 5vw;@media(width<1400px){flex-direction: column;}}
 .column{display: flex;}
 .examples{font-size: 40px; font-weight: bolder; padding-bottom: 10vw; padding-left: 10vw; padding-top: 10vw;}
-#sec3{background-color: #ffffff;height: 60vh;padding-bottom: 250px;}
-#sec3 .pt{margin-top: -170px;}
+#sec3{background-color: #ffffff;height: 100vh; padding-bottom: 0px; padding-top: 0px;}
+#sec3 .pt{ text-align: center;@media(width<1200px){margin-top: 0vw;}}
 .pt2{text-align: center; width: 50%; font-size: 140px; font-weight: bolder; color: #3490dc; @media(width<1400px){font-size: 100px;}}
 .shoplist{width: 50%;}
 .shops{box-sizing: border-box;font-size: 80px; background-color: #ffffff00; text-align: center; line-height: 100px;@media(width<1700px){font-size: 60px;}}
@@ -175,11 +176,11 @@ footer a{text-decoration: none; color: #000000;}footer a:hover{color: #000000;} 
 footer{background-color: #ffffff;padding-bottom: 10vw; display: flex; justify-content: space-between;@media(width<1400px){flex-direction: column;}}
 .foot{padding-left: 15vw; line-height: 20px; font-size: 15px;font-weight: bolder; padding-top: 5vw;}
 .foot span{font-size: 30px;}
-#sec5 {margin-top: 0px; container-type: inline-size; gap: var(--size-7); inline-size: 100%; background-color: rgb(255, 255, 255); color: var(--gray-10); padding-block: var(--size-7); padding-inline: var(--size-3);}
-  .carousel {padding-top: 0vw; display: grid; max-inline-size: 100%; gap: var(--size-3);}
+#sec5 {z-index: 0; height: 70vh; margin-top: 0px; container-type: inline-size; gap: var(--size-7); inline-size: 100%; background-color: rgb(255, 255, 255); color: var(--gray-10); padding-block: var(--size-7); padding-inline: var(--size-3);}
+  .carousel {z-index: 0; padding-top: 0vw; display: grid; max-inline-size: 100%; gap: var(--size-3);}
   header { display: grid; grid-auto-flow: column; justify-content: space-between;}
   h3 { font-weight: var(--font-weight-7);}
- .controls { direction: ltr; display: flex; grid-auto-flow: column; place-items: center; gap: 85vw; position: absolute; z-index: 1; }
+ .controls { direction: ltr; display: flex; grid-auto-flow: column; place-items: center;gap: 91vw; @media(width<700px){gap: 85vw;} position: absolute; z-index: 1; }
   button {display: grid; place-items: center;  block-size: var(--size-8); border-radius: var(--radius-round); background-color: var(--gray-3); transition: background-color 0.2s ease;
   &:hover { background-color: var(--gray-4);}
   &:focus { box-shadow: 0 0 0 2px var(--indigo-7);}
@@ -206,17 +207,108 @@ footer{background-color: #ffffff;padding-bottom: 10vw; display: flex; justify-co
     </ul>
     </div>
         <a href="index.html"><img src="logo.svg" class="yslogo"></div></a>
-        <div class="img-container1">
+        <div class="img-container1-1">
             <div class="pt"><span>almond based <br>you can try five options</span><br>spread it</div>
         </div>
+        <div class="img-container1-2">
+       
+      </div>
 
     </section>
     <section id="sec1">
-        <div class="img-container3"></div>
-        <div class="left">
-            <div class="top"><SPAN>SANDWICH & ALMOND</SPAN><BR><BR>아몬드가루 베이스의 저당, 저탄수화물, 고단백질 식빵입니다. 빵의 두께만큼 아몬드로 가득 채웠습니다.</div>
+      <div class="img-container3"></div>
+      <div class="left">
+          <div class="top"><SPAN>SANDWICH & ALMOND</SPAN><BR><BR>아몬드가루 베이스의 저당, 저탄수화물, 고단백질 식빵입니다. 빵의 두께만큼 아몬드로 가득 채웠습니다.</div>
+      </div>
+  </section>
+    <section id="sec5">
+       
+      <div class="carousel" aria-label="Featured Items Carousel" aria-roledescription="carousel" >
+          <div class="controls">
+              <button id="prevBtn" aria-label="Previous" title="Previous" onclick="Scroller.scrollBy(-516, 0)" style="background-color: rgba(255, 255, 255, 0); border: 0; margin-top: 240px; margin-left: 2vw;" >
+                  <svg style="width: 20px;" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M8.71833 15L0 7.5L8.71833 0L10 1.10257L2.56337 7.5L10 13.8974L8.71833 15Z" fill="white" /></svg></button>
+              <button id="nextBtn" aria-label="Next" title="Next" onclick="Scroller.scrollBy(516, 0)" style="background-color: rgba(255, 255, 255, 0); border: 0; margin-top: 240px; " >
+                  <svg style="width: 20px;" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" >
+                    <path d="M1.28167 15L10 7.5L1.28167 0L1.72702e-07 1.10257L7.43663 7.5L1.72702e-07 13.8974L1.28167 15Z" fill="white"/> </svg></button>
+              </div>
+        <div id="Scroller" class="scroller" role="group" aria-label="Items Scroller" aria-live="polite">
+         
+          <a href="" class="snap" aria-label="1 of 6" aria-roledescription="item">
+            <figure>
+              <picture>                    
+                <img
+                src="review2.png" class="pic"
+                alt=""
+                loading="lazy"
+                width="500"
+                height="500"
+              />
+                
+              </picture>
+              <figcaption>
+                <div>butter<Br>& sallery</div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="" class="snap" aria-label="2 of 6" aria-roledescription="item" >
+            <figure>
+              <picture>                    
+                <img
+                  src="review1.jpg"class="pic"
+                  alt=""
+                  loading="lazy"
+                  width="500"
+                  height="500"
+                />
+                
+              </picture>
+              <figcaption>
+                <div>yogurt<Br>& nuts</div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="" class="snap" aria-label="3 of 6" aria-roledescription="item">
+            <figure>
+              <picture>
+                <img
+                  src="ys6.jpg"class="pic"
+                  alt=""
+                  loading="lazy"
+                  width="500"
+                  height="500"
+                />
+              </picture>
+              <figcaption>
+                <div>cake</div>
+              </figcaption>
+            </figure>
+          </a>
+          
+          <a href="" class="snap" aria-label="5 of 6" aria-roledescription="item"
+          >
+            <figure>
+              <picture>
+                <img
+                  src="d.jpg"class="pic"
+                  alt=""
+                  loading="lazy"
+                  width="500"
+                  height="500"
+                />
+              </picture>
+              <figcaption>
+                <div>delivery</div>
+              </figcaption>
+            </figure>
+          </a>
+         
+         
         </div>
+        
+      </div>
     </section>
+    
     <section id="sec2">
         <div class="img-container">
             <div class="pt"><span>try everything<br>make everything</span><br>fresh sandwich</div>
@@ -231,131 +323,12 @@ footer{background-color: #ffffff;padding-bottom: 10vw; display: flex; justify-co
     <section id="sec4">
         <div class="midtext">포만감 up, 당 down.<br> 비건부터 곤약까지. <Br>글루텐 0%<br>대체당 0%<br>유제품 0%</div>
     </section>
-    <section id="sec5">
-       
-        <div class="carousel" aria-label="Featured Items Carousel" aria-roledescription="carousel" >
-            <div class="controls">
-                <button id="prevBtn" aria-label="Previous" title="Previous" onclick="Scroller.scrollBy(-516, 0)" style="background-color: rgba(255, 255, 255, 0); border: 0; margin-top: 240px; margin-left: 2vw;" >
-                    <svg style="width: 20px;" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                      <path d="M8.71833 15L0 7.5L8.71833 0L10 1.10257L2.56337 7.5L10 13.8974L8.71833 15Z" fill="white" /></svg></button>
-                <button id="nextBtn" aria-label="Next" title="Next" onclick="Scroller.scrollBy(516, 0)" style="background-color: rgba(255, 255, 255, 0); border: 0; margin-top: 240px; " >
-                    <svg style="width: 20px;" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" >
-                      <path d="M1.28167 15L10 7.5L1.28167 0L1.72702e-07 1.10257L7.43663 7.5L1.72702e-07 13.8974L1.28167 15Z" fill="white"/> </svg></button>
-                </div>
-          <div id="Scroller" class="scroller" role="group" aria-label="Items Scroller" aria-live="polite">
-           
-            <a href="" class="snap" aria-label="1 of 6" aria-roledescription="item">
-              <figure>
-                <picture>                    
-                  <img
-                  src="review2.png" class="pic"
-                  alt=""
-                  loading="lazy"
-                  width="500"
-                  height="500"
-                />
-                  
-                </picture>
-                <figcaption>
-                  <div>butter<Br>& sallery</div>
-                </figcaption>
-              </figure>
-            </a>
-            <a href="" class="snap" aria-label="2 of 6" aria-roledescription="item" >
-              <figure>
-                <picture>                    
-                  <img
-                    src="review1.jpg"class="pic"
-                    alt=""
-                    loading="lazy"
-                    width="500"
-                    height="500"
-                  />
-                  
-                </picture>
-                <figcaption>
-                  <div>yogurt<Br>& nuts</div>
-                </figcaption>
-              </figure>
-            </a>
-            <a href="" class="snap" aria-label="3 of 6" aria-roledescription="item">
-              <figure>
-                <picture>
-                  <img
-                    src="ys6.jpg"class="pic"
-                    alt=""
-                    loading="lazy"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-                <figcaption>
-                  <div>cake</div>
-                </figcaption>
-              </figure>
-            </a>
-            <a href="" class="snap" aria-label="4 of 6" aria-roledescription="item"
-            >
-              <figure>
-                <picture>
-                  <img
-                    src="te.jpg"class="pic"
-                    alt=""
-                    loading="lazy"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-                <figcaption>
-                  <div>coleslaw</div>
-                </figcaption> 
-              </figure>
-            </a>
-            <a href="" class="snap" aria-label="5 of 6" aria-roledescription="item"
-            >
-              <figure>
-                <picture>
-                  <img
-                    src="d.jpg"class="pic"
-                    alt=""
-                    loading="lazy"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-                <figcaption>
-                  <div>delivery</div>
-                </figcaption>
-              </figure>
-            </a>
-            <a href="" class="snap" aria-label="6 of 6" aria-roledescription="item" >
-              <figure>
-                <picture>
-                  <img
-                    src="te.jpg"class="pic"
-                    alt=""
-                    loading="lazy"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-                <figcaption>
-                  <div>Precision in Every Stitch</div>
-                </figcaption>
-              </figure>
-            </a>
-           
-          </div>
-          
-        </div>
-      </section>
-
-      
-    <section id="sec3">
-      <div class="img-container4">
-          <div class="pt"><a href="https://smartstore.naver.com/yshealthyda/products/5932724591" > shop ></a></div>
-      </div>
-  </section>
+   
+  <section id="sec3">
+    <div class="img-container4">
+        <div class="pt"><a href="https://smartstore.naver.com/yshealthyda/products/5932724591" > shop ></a></div>
+    </div>
+</section>
 
   <footer>
     <div class="foot">
