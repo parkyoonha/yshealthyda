@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>와이즈헬씨다</title>
+    <meta name="description" content="간편하고 건강하게">
+    <meta property="og:type" content="website"> 
+<meta property="og:title" content="와이즈헬씨다">
+<meta property="og:description" content="간편하고 건강하게">
+    <meta property="og:image" content="http://www.yshealthyda.com/bluelog.svg">
+    <meta property="og:url" content="http://www.yshealthyda.com">
+  
+<meta name="instagram:title" content="와이즈헬씨다">
+<meta name="instagram:description" content="간편하고 건강하게">
+<meta name="instagram:domain" content="http://www.yshealthyda.com">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+
+.wrapper{
+  position: fixed;
+  top: 0;
+  /*left: -100%;*/
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  transition: all 0.6s ease-in-out;
+}
+#active:checked ~ .wrapper{
+  /*left: 0;*/
+  left:0;
+}
+.menu-btn{
+  position:fixed;
+  z-index: 2;
+  left: 10px;
+  /*left: 20px; */
+  top: 25px;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.menu-btn span,
+.menu-btn:before,
+.menu-btn:after{
+	content: "";
+	position: absolute;
+	top: calc(50% - 1px);
+	left: 30%;
+	width: 40%;
+	border-bottom: 2px solid #ffffff;
+	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.menu-btn:before{
+  transform: translateY(-8px);
+}
+.menu-btn:after{
+  transform: translateY(8px);
+}
+
+
+.close {
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	transition: background .6s;
+}
+
+/* closing animation */
+#active:checked + .menu-btn span {
+	transform: scaleX(0);
+}
+#active:checked + .menu-btn:before {
+	transform: rotate(45deg);
+  border-color: #ffffff;
+}
+#active:checked + .menu-btn:after {
+	transform: rotate(-45deg);
+  border-color: #fff;
+}
+.wrapper ul{
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+.wrapper ul li{
+  height: 10%;
+  margin: 15px 0;
+}
+.wrapper ul li a{
+  font-family: prompt;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 5px 30px;
+  color: #0095ff;
+  border-radius: 50px;
+  position: absolute;
+  line-height: 50px;
+  margin: 5px 30px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.wrapper ul li a:after{
+  position: absolute;
+  content: "";
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+  transform: scaleY(0);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+.wrapper ul li a:hover:after{
+  transform: scaleY(1);
+}
+.wrapper ul li a:hover{
+  color: #1a73e8;
+}
+input[type="checkbox"]{
+  display: none;
+}
+#active:checked ~ .wrapper ul li a{
+  opacity: 1;
+}
+.wrapper ul li a{
+  transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translateX(100px);
+}
+#active:checked ~ .wrapper ul li a{
+	transform: none;
+	transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); /* easeOutBackを緩めた感じ */
+   transition-delay: .6s;
+  transform: translateX(-100px);
+}
+
+
+
+    *{margin: 0; padding: 0; font-family: '';}
+@media(max-width:5000px){
+
+body{width: 100%; background-color: rgb(255, 255, 255); height: 100vh;}
+section{height: 100vh; background-color: #ffffff;}
+.yslogo {width: 85px; z-index: 1; position: fixed; cursor: pointer; right: 25px; top: 25px;@media(width<700px){width: 65px;}}
+
+
+.show1{font-family: prompt; font-size: 55px; padding-top: 100px; padding-bottom: 3vw; line-height: 1;@media(width<700px){font-size: 30px;}@media(width<330px){font-size: 20px;}}
+.show2{font-size: 40px; padding-top: 4vw;@media(width<330px){font-size: 30px;}}
+.show3{font-size: 35px;width: 70%;@media(width<330px){font-size: 20px;} }
+.show5{font-size: 40px; padding-top: 3vw;@media(width<330px){font-size: 30px;}}
+.show6{font-size: 35px; width: 70%;@media(width<330px){font-size: 20px;}}
+.three{display: flex; padding-top: 8vw; @media(width<1200px){flex-direction: column;}}
+.three h1{margin-right: 15vw; font-size: 28px;  @media(width<1200px){margin-top: 13vw;}}
+.left-container{padding-left: 5vw; }
+#sec1{height: 140vh; @media(width<1200px){flex-direction: column; height: 140vh;}}
+.slice1{width: 120%; margin-left: -6vw; margin-top: -4vw;}
+.top{font-size: 38px; font-weight: bolder; padding-left: 100px; height: 50vh;@media(width<1200px){padding-left: 100%; height: 40vh;}@media(width<500px){font-size: 25px;}}
+SPAN{font-size: 50PX;}
+.left{ display: flex; align-items: center; justify-content: center; width: 50%;padding-right: 100px;  padding-top: 10vw;}
+.img-container{ width: 100%; background-image: url(dkt.jpg);height: 100vh;background-size: cover; background-position: 30%;}
+.img-container2{width: 100%; background-image: url(jaam.jpg);height: 100vh;background-size: cover; background-position: 30%;background-position-y: 30%;}
+.img-container3{width: 100%; background-image: url(ys5.jpg);height: 100vh;background-size: cover; background-position: 30%;}
+.pt{font-family: prompt; font-size: 9vw; font-weight: bolder; padding-left: 10vw; padding-top: 170px; color: #ffffff; line-height: 1; @media(width<700px){font-size: 15vw; }}
+.pt span{ font-size: 70px; color: #ffffff; @media(width<1200px){font-size: 40px;}@media(width<900px){font-size: 25px;}}
+.pt a{text-decoration: none;}
+#sec4{height: 500px; background-color: #ffffff; padding-left: 15vw; padding-top: 100px;}
+.midtext{color: #000000; font-size: 50px; font-weight: bolder;@media(width<500px){font-size: 40px;}}
+.con{width: 41%; height: 70%; overflow: hidden;}
+.flex{display: flex; height: 100vh; justify-content: space-between; padding-left: 5vw;padding-right: 5vw;@media(width<1400px){flex-direction: column;}}
+.column{display: flex;}
+.examples{font-size: 40px; font-weight: bolder; padding-bottom: 10vw; padding-left: 10vw; padding-top: 10vw;}
+#sec3{background-color: #74c0ff;}
+.pt2{text-align: center; width: 50%; font-size: 140px; font-weight: bolder; color: #3490dc; @media(width<1400px){font-size: 100px;}}
+.shoplist{width: 50%;}
+.shops{box-sizing: border-box;font-size: 80px; background-color: #38506400; text-align: center; line-height: 100px;@media(width<1700px){font-size: 60px;}}
+
+.foot{padding-left: 150px; line-height: 20px; font-size: 15px;font-weight: bolder; padding-top: 5vw;}
+.foot span{font-size: 30px;}
+#sec5 {margin-top: 10vw; container-type: inline-size; gap: var(--size-7); inline-size: 100%; background-color: rgb(255, 255, 255); color: var(--gray-10); padding-block: var(--size-7); padding-inline: var(--size-3);}
+  .carousel {padding-top: 15vw; display: grid; max-inline-size: 100%; gap: var(--size-3);}
+  header { display: grid; grid-auto-flow: column; justify-content: space-between;}
+  h3 { font-weight: var(--font-weight-7);}
+ .controls { direction: ltr; display: flex; grid-auto-flow: column; place-items: center; gap: 92vw; position: absolute; z-index: 1; 
+ @media (width < 768px) { display: none;}}
+  button {display: grid; place-items: center;  block-size: var(--size-8); border-radius: var(--radius-round); background-color: var(--gray-3); transition: background-color 0.2s ease;
+  &:hover { background-color: var(--gray-4);}
+  &:focus { box-shadow: 0 0 0 2px var(--indigo-7);}
+  &:focus-visible { box-shadow: unset; outline-offset: unset;}
+  &:disabled { opacity: 0.3; cursor: not-allowed;}}
+  .scroller { z-index: 0;display: grid; grid-auto-flow: column; gap: var(--size-3); scroll-behavior: smooth; overflow-x: auto; padding-block-end: var(--size-6); scrollbar-width: thin; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; }
+  .snap { scroll-snap-align: start; padding: 0; margin: 0; text-decoration: none; color: inherit;}
+  figure { display: grid; grid-template-rows: 1fr min-content;inline-size: min(100cqi, 500px); place-items: start;gap: var(--size-3);}
+  .pic {aspect-ratio: var(--ratio-square); object-fit: cover; background-color: rgb(255, 255, 255); block-size: 100%;}
+  figcaption{ border: 0px solid; height: 0vw; width: 32vw;border-radius: 10px;text-align: center;}
+  footer{background-color: #252525;padding-bottom: 10vw; display: flex; justify-content: space-between;@media(width<1400px){flex-direction: column;}}
+.foot{padding-left: 15vw; line-height: 30px; font-size: 15px; padding-top: 15vw;font-weight: 600; color: #ffffff;}
+.foot span{font-size: 25px; font-weight: bolder;color: #ffffff;}
+.foot a{text-decoration: none;color: #ffffff;}
+}
+</style>
+<body>
+    <section id="sec2">
+      <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page1.html">sandwich</a></li>
+        <li><a href="page2.html">butter</a></li>
+        <li><a href="page3.html">dessert</a></li>
+</ul>
+</div>
+        <a href="index.html"><img src="logo.svg" class="yslogo"></div></a>
+        
+        <div class="img-container">
+            <div class="pt">keep simple,<br> keep healthy<bR><a href="page1.html"><span>간단하고 건강하게 > </span></a></div>
+        </div>
+    </section>
+    <section id="sec2">
+        <div class="img-container2">
+            <div class="pt">flavored<br> butter jam<bR><a href="page2.html"><span>아낌 없이 넣은 재료 > </span></a></div>
+        </div>
+    </section>   
+    <section id="sec2">
+        <div class="img-container3">
+            <div class="pt">less sweet,<br> high protein<bR><a href="page3.html"><span>저당 디저트 > </span></a></div>
+        </div>
+    </section>   
+    <section id="sec1">
+      <div class="value-container">
+          <div class="left-container">
+              <div class="show1">
+              <h1>WE MAKE FOOD<BR> FOR HEALTHY LIFE<BR>,WELL-BEING</h1>
+              </div>
+              <div class="show2">
+              <h3>VALUE</h3>
+              </div>
+              <div class="show3">
+              <h6>와이즈헬씨다에서 가장 중요하게 생각하는 가치는 건강입니다.</h6>
+              </div>   
+              <div class="show5">
+              <h3>OUR GOAL</h3>
+              </div>
+              <div class="show6">
+              <h6>거부감 없이 맛있고 깨끗한 건강 간식을 많은 분들과 함께 즐기는 것이 목표입니다.
+              시중의 식품보다 당이 덜 오르는 제과류를 시작으로 다양한 수제 식품을 제작합니다.</h6>
+              </div>
+ 
+          </div>
+        </div>
+  </section>
+
+    <footer>
+        <div class="foot">
+            <span>CONTACT</span>
+        <br><br><br> 010-3453-9773<br>대표자 : 정유경<br>사업자등록번호 : 878-90-00506<br><br><br>
+        <a href="https://www.instagram.com/yshealthyda/"> INSTAGRAM</a><br><a href="https://smartstore.naver.com/yshealthyda" style="color: #bbbbbb;">  NAVER ></a><br><a href="https://shop.coupang.com/vidv1/A00221889?source=brandstore_sdp_atf&platform=p&locale=ko_KR" style="color: #bbbbbb;"> COUPANG ></a><br><a href="https://www.idus.com/v2/search?utm_source=naver_sa&utm_medium=pc&utm_campaign=A.02_%EC%9E%91%EA%B0%80%EB%AA%85_PC&utm_content=%EC%8B%9D%ED%92%882_PC&utm_term=%EC%99%80%EC%9D%B4%EC%A6%88%ED%97%AC%EC%94%A8%EB%8B%A4&n_media=27758&n_query=%EC%99%80%EC%9D%B4%EC%A6%88%ED%97%AC%EC%94%A8%EB%8B%A4&n_rank=2&n_ad_group=grp-a001-01-000000028971567&n_ad=nad-a001-01-000000205070910&n_keyword_id=nkw-a001-01-000004765353491&n_keyword=%EC%99%80%EC%9D%B4%EC%A6%88%ED%97%AC%EC%94%A8%EB%8B%A4&n_campaign_type=1&n_ad_group_type=1&n_match=1&NaPm=ct=lu6ts6nc|ci=0yi0002nju5A4xpw9eW3|tr=sa|hk=301992188cce11390aa799c459fe3dfd45af643f&keyword=%EC%99%80%EC%9D%B4%EC%A6%88%ED%97%AC%EC%94%A8%EB%8B%A4"style="color: #bbbbbb;"> IDIUS ></a>
+        </div>
+    </footer>
+    <script>
+      ScrollReveal({
+  reset: true,
+  distance: '60px',
+  duration: 2500,
+  delay: 200
+});
+
+ScrollReveal().reveal('.show1', {delay:200});
+ScrollReveal().reveal('.show2', {delay:700});
+ScrollReveal().reveal('.show3', {delay:1000});
+ScrollReveal().reveal('.show5', {delay:1300});
+ScrollReveal().reveal('.show6', {delay:1700});
+
+ </script>  
+</body>
+</html>
+
+
+
